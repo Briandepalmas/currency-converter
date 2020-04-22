@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import Selector from './components/Selector'
 
 export class App extends Component {
  constructor(props){
@@ -7,41 +8,48 @@ export class App extends Component {
    this.state={
        dollar:1,
        country:'',
-       amount:''
+       amount:'',
+       rates:''
    }
  }
+
+
 
  componentDidMount(){
  
   axios.get("https://api.exchangerate-api.com/v6/latest")
-    .then(response => {this.setState({country:response.data.rates})
-       console.log(this.state.country)
+    .then(response => {this.setState({rates:response.data.rates})
+       console.log(this.state.rates)
      })
      .catch(error => {
        console.log('there is an error', error)
      })
-     
+  
+ 
+    }
+
+ 
+  countrySelection =country=>{
+    this.setState({amount:country})
+    console.log("this ",country)
+    console.log("from app",this.state.amount)
   }
  
- 
-  onSubmit = (event) => {
-    event.preventDefault();
-    console.log("IS INNNNNNN",this.state.amount)
-  }
-  //////////////////////////
-  onChange = (event) => (this.setState({amount: event.target.value }));
   
     render() {
     return (
       <div>
-         <form className="forms" onSubmit={this.onSubmit}>
+
+         <Selector pick={this.countrySelection}/>
+
+         {/* <form className="forms" onSubmit={this.onSubmit}>
           <h3 id="abc">Enter Amount: </h3>
          
           <input type="text" name="amount" placeholder="amount" value={this.state.amount}
           onChange={this.onChange}/>
           
           <input id="submit" type="submit"  ></input>
-          </form>
+          </form> */}
       </div>
     )
   }
