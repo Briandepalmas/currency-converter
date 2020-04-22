@@ -15,22 +15,37 @@ state={
    onSubmit = (event) => {
      event.preventDefault();
     this.setState({[event.target.name]: event.target.value })
+    this.convert()
     // console.log("SELECTOR IS INN",this.state.country)
     // console.log("SELECTOR IS INN",this.state.amount)
     //this.props.pick(this.state.country,this.state.amount)
     //this.setState({ username: '',password:'' });
    // this.setState({country:this.state.amount})
-    if (this.state.country==="Brazil"){
-        let a=this.state.amount/this.props.rates.DOP
-        this.setState({conversion:a})
-        console.log("new amnt",this.state.conversion)
-         return this.state.conversion;
-    }else{
-        console.log("did not update")
-    }
+    
+   
+//    if (this.state.country==="Brazil"){
+//         let a=this.state.amount/this.props.rates.DOP
+//         this.setState({conversion:a})
+//         console.log("new amnt",this.state.conversion)
+//          return this.state.conversion;
+//     }else{
+//         console.log("did not update")
+//     }
     
    
   }
+////////////////////////////
+convert(){
+    if (this.state.country==="Brazil"){
+        let a=this.state.amount/this.props.rates.DOP
+        this.setState({conversion:a.toFixed(2)})
+        console.log("new amnt",this.state.conversion)
+         return this.state.conversion
+    }else{
+        console.log("did not update")
+    }
+}
+
   //////////////////////////
  
   onChange = (event) => (this.setState({[event.target.name]: event.target.value })); 
@@ -38,8 +53,6 @@ state={
     render() {
         return (
             <div>
-                
-
                 <form className="forms" onSubmit={this.onSubmit} >
                     <div>
                         <label id="abc">Currency: </label>
@@ -58,8 +71,7 @@ state={
                         <Converter choice={this.state.conversion} 
                            amount={this.state.amount} 
                            rates={this.props}/>
-                    </div>
-                  
+                    </div>                 
                 </form>
             </div>
         )
