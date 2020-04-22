@@ -1,13 +1,17 @@
 import React from 'react'
-//import Selector from './Selector'
+import '../App.css'
+
 function Converter(props) {
     
       
     console.log("converter-->",props.choice,props.amount,props.rates)
     return (
-        <div>
+        <body id={props.country}>
             
-        </div>
+                <h1>{"$USD "+props.choice}</h1>
+            
+        </body>
+        
     )
     
 }

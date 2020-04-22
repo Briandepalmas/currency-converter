@@ -1,0 +1,44 @@
+#Brazil{
+background-color: darkgreen;
+height: 100vh;
+width: 100vw;
+}
+#Dominican-Republic{
+  background-color: blue;
+height: 100vh;
+width: 100vw;
+}
+#countries{
+  height: 60px;
+  font-size: 28px;
+}
+.selector-currency{
+  margin-right: 40px;
+}
+ .forms{
+  
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15%;
+  /* height: 300px;
+  background-color: darkgreen;
+  margin-top: 10%; */
+}
+#currency{
+  display: flex;
+  justify-content: space-around;
+}
+#main{
+  display: flex;
+  justify-content: space-around;
+  background-color: darkmagenta;
+  height: 100vh;
+  
+} 
+/* body{
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+  background-color: darkgreen;
+  margin-top: 10%;
+} */
