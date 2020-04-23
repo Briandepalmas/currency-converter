@@ -84,7 +84,7 @@ state={
                             </div>
                             
                             <div className="enter-amount-bar">
-                                <h1>Enter amount:</h1>
+                                <h1 id="enter-amount">Enter amount:</h1>
                                 <input className="selector-enteramount"type="text" name="amount" placeholder="enter amount" value={this.state.amount}
                                 onChange={this.onChange}/>
                                 <input id="submit" type="submit" ></input>

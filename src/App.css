@@ -8,15 +8,15 @@
   height:100vh;
 }
 .UAE{
-  background-image: url(https://traveler.marriott.com/wp-content/uploads/2019/03/GI-150534630-Colonial-Zone_header.jpg);
+  background-image: url(https://images.rove.me/w_1920,q_85/ozax9kwrrcf0hgjqxwxf/dubai-burj-khalifa.jpg);
   height:100vh;
 }
 .UK{
-  background-image: url(https://traveler.marriott.com/wp-content/uploads/2019/03/GI-150534630-Colonial-Zone_header.jpg);
+  background-image: url(https://www.history.com/.image/t_share/MTYyNDg1MjE3MTI1Mjc5Mzk4/topic-london-gettyimages-760251843-promo.jpg);
   height:100vh;
 }
 .Japan{
-  background-image: url(https://traveler.marriott.com/wp-content/uploads/2019/03/GI-150534630-Colonial-Zone_header.jpg);
+  background-image: url(https://d36tnp772eyphs.cloudfront.net/blogs/1/2011/05/japan-1200x729.jpg);
   height:100vh;
 }
 
@@ -27,7 +27,7 @@
 
 /* ///////////////////////// */
 body{
-  background-color:greenyellow;
+  background-color:rgb(150, 184, 98);
 
 }
 
@@ -65,6 +65,7 @@ body{
   width:200px;
   margin-top: 30px;
   font-size: 20px;
+  font-weight: 200;
 }
 #submit{
   margin-top: 30px;
@@ -78,6 +79,7 @@ body{
 #usd{
 margin-left:37%;
 font-size: 40px;
+font-weight: 200;
 background-color:white;
 width:20vw;
 
