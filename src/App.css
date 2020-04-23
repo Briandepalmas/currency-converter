@@ -1,44 +1,71 @@
-#Brazil{
-background-color: darkgreen;
-height: 100vh;
-width: 100vw;
-}
-#Dominican-Republic{
+/* #main{
   background-color: blue;
-height: 100vh;
-width: 100vw;
-}
-#countries{
-  height: 60px;
-  font-size: 28px;
-}
-.selector-currency{
-  margin-right: 40px;
-}
- .forms{
-  
-  display: flex;
-  justify-content: space-around;
-  margin-top: 15%;
-  /* height: 300px;
-  background-color: darkgreen;
-  margin-top: 10%; */
-}
-#currency{
-  display: flex;
-  justify-content: space-around;
-}
-#main{
-  display: flex;
-  justify-content: space-around;
-  background-color: darkmagenta;
-  height: 100vh;
-  
-} 
-/* body{
-  display: flex;
-  justify-content: space-around;
-  height: 100vh;
-  background-color: darkgreen;
-  margin-top: 10%;
+  height:100vh
 } */
+.Brazil{
+  /* background-color: hotpink; */
+  background-image: url(https://www.nationalgeographic.com/content/dam/travel/Guide-Pages/south-america/rio-de-janeiro-travel.adapt.1900.1.jpg);
+  height:100vh;
+}
+.Dominican-Republic{
+  background-image: url(https://traveler.marriott.com/wp-content/uploads/2019/03/GI-150534630-Colonial-Zone_header.jpg);
+  height:100vh;
+}
+body{
+  background-color:greenyellow;
+
+}
+
+.forms-main{
+
+}
+
+
+.both-bars{
+  display: flex;
+  justify-content: space-around;
+  margin-top:10%
+  
+}
+.country-bar{
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.countries{
+  height: 30px;
+  width:230px;
+  margin-top: 30px;
+  font-size: 20px;
+}
+
+/* ////////////////// */
+.enter-amount-bar{
+  display: flex;
+  justify-content: space-around;
+  /* margin-right: 3%; */
+
+}
+.selector-enteramount{
+  height: 30px;
+  width:200px;
+  margin-top: 30px;
+  font-size: 20px;
+}
+#submit{
+  margin-top: 30px;
+  height:30px;
+  width:200px;
+  font-size: 20px;
+  background-color:rgb(84, 155, 84);
+  
+}
+/* ////////////////////// */
+#usd{
+margin-left:37%;
+font-size: 40px;
+background-color:white;
+width:20vw;
+
+}

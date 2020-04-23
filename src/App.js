@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import axios from 'axios'
 import './App.css'
 import Selector from './components/Selector'
+import Rates from './components/Rates'
 
 export class App extends Component {
  constructor(props){
@@ -20,14 +21,23 @@ export class App extends Component {
      .catch(error => {
        console.log('there is an error', error)
      })
-
-  }
+    }
+ 
+  
  
   
     render() {
     return (
       <div id="main">
+        <nav>
+          <ul>
+            <li>About</li>
+            <li>Rates</li>
+            <li>Home</li>
+          </ul>
+        </nav>
          <Selector rates={this.state.rates}/>
+         <Rates rates={this.state.rates}/>
       </div>
     )
   }

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import '../App.css'
 import Converter from './Converter'
 
 
@@ -6,7 +7,7 @@ export class Selector extends Component {
 
 state={
     country:'',
-    amount:0,
+    amount:null,
     conversion:0
 }
 
@@ -35,7 +36,10 @@ state={
         else{
              console.log("did not update")
         }
+   
     }
+
+    
 
   //////////////////////////
  
@@ -45,25 +49,29 @@ state={
     
   render() {
         return (
-            <div>
+            <div className="forms-main">
                 <form className="forms" onSubmit={this.onSubmit} >
                     <div>
-                        <div id="currency">
-                            <label>
-                                <h1 className="selector-currency">Currency: </h1>
-                             </label>
+                        <div className="both-bars">
+                            <div className="country-bar">
+                               <label>
+                                    <h1 className="selector-currency">Currency: </h1>
+                               </label>
                     
-                            <select id="countries" name="country" onChange={this.onChange}>
-                                <option value="dummyvalue" >-Select Country-</option>
-                                <option value="Dominican-Republic" >Dominican Republic</option>
-                                <option value="Brazil">Brazil</option>
-                            </select>
+                                <select className="countries" name="country" onChange={this.onChange}>
+                                    <option value="dummyvalue" >-Select Country-</option>
+                                    <option value="Dominican-Republic" >Dominican Republic</option>
+                                    <option value="Brazil">Brazil</option>
+                                </select> 
+                            </div>
                             
-                            <h1>Enter amount:</h1>
-                            <input className="selector-submit"type="number" name="amount" placeholder="amount" value={this.state.amount}
-                            onChange={this.onChange}/>
-                    
-                            <input id="submit" type="submit"></input>
+                            <div className="enter-amount-bar">
+                                <h1>Enter amount:</h1>
+                                <input className="selector-enteramount"type="text" name="amount" placeholder="enter amount" value={this.state.amount}
+                                onChange={this.onChange}/>
+                                <input id="submit" type="submit" ></input>
+                            </div>
+
                         </div>
                         
                         

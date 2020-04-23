@@ -4,11 +4,11 @@ import '../App.css'
 function Converter(props) {
     
       
-    console.log("converter-->",props.choice,props.amount,props.rates)
+    //console.log("converter-->",props.choice,props.amount,props.rates)
     return (
-        <body id={props.country}>
+        <body className={props.country}>
             
-                <h1>{"$USD "+props.choice}</h1>
+                <h1 id="usd">{"$USD "+props.choice}</h1>
             
         </body>
         
