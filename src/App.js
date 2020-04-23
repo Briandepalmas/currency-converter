@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import {Route,Switch, Link , BrowserRouter as Router} from 'react-router-dom';
 import axios from 'axios'
 import './App.css'
 import Selector from './components/Selector'
@@ -28,17 +29,27 @@ export class App extends Component {
   
     render() {
     return (
-      <div id="main">
+      <Router>
+        <div id="main">
         <nav>
-          <ul>
-            <li>About</li>
-            <li>Rates</li>
-            <li>Home</li>
-          </ul>
-        </nav>
+            <h1>
+              <Link to="/About">About </Link>
+              <Link to="/home">Home </Link>
+              <Link to="/profile">Profile </Link>
+              <Link to="/favorites">Favorites</Link>
+            </h1>
+           </nav>
          <Selector rates={this.state.rates}/>
          <Rates rates={this.state.rates}/>
       </div>
+     `` <Switch>
+         <Route exact path="/About" component={About} />
+         {/* <Route exact path="/home" component={Home} /> */}
+         <Route exact path="/profile" component={Profile} />
+         {/* <Route exact path="/favorites" component={Favorites} /> */}
+        </Switch>
+      </Router>
+      
     )
   }
 }
