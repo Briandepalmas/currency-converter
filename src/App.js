@@ -4,6 +4,8 @@ import axios from 'axios'
 import './App.css'
 import Selector from './components/Selector'
 import Rates from './components/Rates'
+import About from './components/About'
+
 
 export class App extends Component {
  constructor(props){
@@ -34,18 +36,18 @@ export class App extends Component {
         <nav>
             <h1>
               <Link to="/About">About </Link>
-              <Link to="/home">Home </Link>
-              <Link to="/profile">Profile </Link>
-              <Link to="/favorites">Favorites</Link>
+              <Link to="/Home">Home </Link>
+              {/* <Link to="/profile">Profile </Link>
+              <Link to="/favorites">Favorites</Link> */}
             </h1>
            </nav>
          <Selector rates={this.state.rates}/>
          <Rates rates={this.state.rates}/>
       </div>
-     `` <Switch>
+        <Switch>
          <Route exact path="/About" component={About} />
-         {/* <Route exact path="/home" component={Home} /> */}
-         <Route exact path="/profile" component={Profile} />
+         <Route exact path="/Home" component={Home} />
+         {/* <Route exact path="/profile" component={Profile} /> */}
          {/* <Route exact path="/favorites" component={Favorites} /> */}
         </Switch>
       </Router>
