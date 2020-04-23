@@ -33,6 +33,21 @@ state={
             this.setState({conversion:a.toFixed(2)})
             return this.state.conversion
         }
+        else if(this.state.country==="UK") {
+            let a=this.state.amount/this.props.rates.GBP
+            this.setState({conversion:a.toFixed(2)})
+            return this.state.conversion
+        }
+        else if(this.state.country==="UAE") {
+            let a=this.state.amount/this.props.rates.AED
+            this.setState({conversion:a.toFixed(2)})
+            return this.state.conversion
+        }
+        else if(this.state.country==="Japan") {
+            let a=this.state.amount/this.props.rates.JPY
+            this.setState({conversion:a.toFixed(2)})
+            return this.state.conversion
+        }
         else{
              console.log("did not update")
         }
@@ -61,7 +76,10 @@ state={
                                 <select className="countries" name="country" onChange={this.onChange}>
                                     <option value="dummyvalue" >-Select Country-</option>
                                     <option value="Dominican-Republic" >Dominican Republic</option>
+                                    <option value="UAE">United Arab Emirates</option>
+                                    <option value="Japan">Japan</option>
                                     <option value="Brazil">Brazil</option>
+                                    <option value="UK">United Kingdom</option>
                                 </select> 
                             </div>
                             
@@ -78,7 +96,8 @@ state={
                         
                         <Converter choice={this.state.conversion} 
                            amount={this.state.amount} 
-                           country={this.state.country}/>
+                           country={this.state.country}
+                           />
                     </div>                 
                 </form>
             </div>

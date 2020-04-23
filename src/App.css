@@ -1,9 +1,5 @@
-/* #main{
-  background-color: blue;
-  height:100vh
-} */
+/* //////////////// */
 .Brazil{
-  /* background-color: hotpink; */
   background-image: url(https://www.nationalgeographic.com/content/dam/travel/Guide-Pages/south-america/rio-de-janeiro-travel.adapt.1900.1.jpg);
   height:100vh;
 }
@@ -11,14 +7,24 @@
   background-image: url(https://traveler.marriott.com/wp-content/uploads/2019/03/GI-150534630-Colonial-Zone_header.jpg);
   height:100vh;
 }
+.UAE{
+  background-image: url(https://traveler.marriott.com/wp-content/uploads/2019/03/GI-150534630-Colonial-Zone_header.jpg);
+  height:100vh;
+}
+
+
+
+
+
+
+
+/* ///////////////////////// */
 body{
   background-color:greenyellow;
 
 }
 
-.forms-main{
 
-}
 
 
 .both-bars{

@@ -5,7 +5,7 @@ import './App.css'
 import Selector from './components/Selector'
 import Rates from './components/Rates'
 import About from './components/About'
-
+import Home from './components/Home'
 
 export class App extends Component {
  constructor(props){
@@ -47,8 +47,7 @@ export class App extends Component {
         <Switch>
          <Route exact path="/About" component={About} />
          <Route exact path="/Home" component={Home} />
-         {/* <Route exact path="/profile" component={Profile} /> */}
-         {/* <Route exact path="/favorites" component={Favorites} /> */}
+         <Route exact path="/Rates" component={Rates} />
         </Switch>
       </Router>
       
