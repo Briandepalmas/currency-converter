@@ -34,14 +34,16 @@ export class App extends Component {
     return (
       <Router>
         <div id="main">
-        <nav>
+        <nav className="navbar">
             <h1>
+              CURRENCY-CONVERTER   
               <Link to="/About">About </Link>
               <Link to="/Home">Home </Link>
               <Link to="/Rates">Rates </Link>
               
             </h1>
            </nav>
+           
          <Selector rates={this.state.rates}/>
          <Rates rates={this.state.rates}/>
          <Footer/>
