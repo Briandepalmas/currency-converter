@@ -34,7 +34,7 @@ export default function Rates() {
                 <li></li>
                 <li></li>
                 <li></li>
-                "USD": 1,
+                "USD": 1
                 "AED": 3.67,
                 "ARS": 65.85,
                 "AUD": 1.57,
