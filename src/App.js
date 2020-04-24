@@ -25,24 +25,30 @@ export class App extends Component {
      .catch(error => {
        console.log('there is an error', error)
      })
+    
+    
+   
+    }
+ 
+  test=()=>{
+      
     }
  
   
- 
-  
     render() {
+      
     return (
       <Router>
         <div id="main">
         <nav className="navbar">
-            <h1>
-              CURRENCY-CONVERTER   
+
+          <h1 id="logo"> CURRENCY-CONVERTER $ € ¥ د.إ</h1>
+            <h1 className="links">    
               <Link to="/About">About </Link>
               <Link to="/Home">Home </Link>
-              <Link to="/Rates">Rates </Link>
-              
+              <Link onClick={this.test}to="/Rates">Rates </Link>
             </h1>
-           </nav>
+        </nav>
            
          <Selector rates={this.state.rates}/>
          <Rates rates={this.state.rates}/>
