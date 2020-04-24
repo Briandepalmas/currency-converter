@@ -6,6 +6,7 @@ import Selector from './components/Selector'
 import Rates from './components/Rates'
 import About from './components/About'
 import Home from './components/Home'
+import Footer from './components/Footer'
 
 export class App extends Component {
  constructor(props){
@@ -43,6 +44,7 @@ export class App extends Component {
            </nav>
          <Selector rates={this.state.rates}/>
          <Rates rates={this.state.rates}/>
+         <Footer/>
       </div>
         <Switch>
          <Route exact path="/About" component={About} />
