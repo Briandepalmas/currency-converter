@@ -9,6 +9,9 @@ export default function Rates() {
         <div>
             <h1>
                 <ul>
+                <li>"USD": 1</li>
+                <li>"AED": 3.67,</li>
+                <li>"BRL": 5.26,</li>
                 <li></li>
                 <li></li>
                 <li></li>
@@ -31,15 +34,12 @@ export default function Rates() {
                 <li></li>
                 <li></li>
                 <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                "USD": 1
-                "AED": 3.67,
+                
+                
                 "ARS": 65.85,
                 "AUD": 1.57,
                 "BGN": 1.8,
-                "BRL": 5.26,
+                
                 "BSD": 1,
                 "CAD": 1.41,
                 "CHF": 0.967,
