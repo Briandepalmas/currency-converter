@@ -10,17 +10,11 @@ state={
     amount:null,
     conversion:0
 }
-
-//////////////////////
-
    onSubmit = (event) => {
      event.preventDefault();
         this.setState({[event.target.name]: event.target.value })
-        this.convert()
-   
+        this.convert()  
     }
-
-  ////////////////////////////
 
     convert(){
         if (this.state.country==="Brazil"){
@@ -50,14 +44,8 @@ state={
         }
    
     }
-
-    
-
-  //////////////////////////
  
   onChange = (event) => (this.setState({[event.target.name]: event.target.value })); 
-
-  ///////////////////////
     
   render() {
         return (
@@ -88,9 +76,7 @@ state={
                             </div>
 
                         </div>
-                        
-                        
-                        
+                                       
                         <Converter choice={this.state.conversion} 
                            amount={this.state.amount} 
                            country={this.state.country}

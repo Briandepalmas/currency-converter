@@ -2,7 +2,6 @@ import React from 'react'
 
 export default function Home() {
 
-
 let time= Date()
 
     return (
