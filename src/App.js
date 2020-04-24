@@ -37,8 +37,8 @@ export class App extends Component {
             <h1>
               <Link to="/About">About </Link>
               <Link to="/Home">Home </Link>
-              {/* <Link to="/profile">Profile </Link>
-              <Link to="/favorites">Favorites</Link> */}
+              <Link to="/Rates">Rates </Link>
+              
             </h1>
            </nav>
          <Selector rates={this.state.rates}/>

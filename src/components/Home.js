@@ -3,11 +3,11 @@ import React from 'react'
 export default function Home() {
 
 
-
+let time= Date()
 
     return (
         <div>
-            <img></img>
+            <h1>{time}</h1>
         </div>
     )
 }
