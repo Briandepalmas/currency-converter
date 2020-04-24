@@ -4,7 +4,7 @@ import '../App.css'
 function Converter(props) {
     
       
-    //console.log("converter-->",props.choice,props.amount,props.rates)
+
     return (
         <body className={props.country}>
             

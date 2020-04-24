@@ -20,10 +20,10 @@ export class App extends Component {
  
   axios.get("https://api.exchangerate-api.com/v6/latest")
     .then(response => {this.setState({rates:response.data.rates})
-       console.log(this.state.rates)
+      
      })
      .catch(error => {
-       console.log('there is an error', error)
+       
      })
     
     
@@ -41,7 +41,7 @@ export class App extends Component {
       <Router>
         <div id="main">
         <nav className="navbar">
-
+          
           <h1 id="logo"> CURRENCY-CONVERTER $ € ¥ د.إ</h1>
             <h1 className="links">    
               <Link to="/About">About </Link>
@@ -51,7 +51,6 @@ export class App extends Component {
         </nav>
            
          <Selector rates={this.state.rates}/>
-         <Rates rates={this.state.rates}/>
          <Footer/>
       </div>
         <Switch>
@@ -59,8 +58,9 @@ export class App extends Component {
          <Route exact path="/Home" component={Home} />
          <Route exact path="/Rates" component={Rates} />
         </Switch>
+        
       </Router>
-      
+       
     )
   }
 }

@@ -6,7 +6,7 @@ export default function Home() {
 let time= Date()
 
     return (
-        <div>
+        <div id="time">
             <h1>{time}</h1>
         </div>
     )

@@ -48,9 +48,6 @@ state={
             this.setState({conversion:a.toFixed(2)})
             return this.state.conversion
         }
-        else{
-             console.log("did not update")
-        }
    
     }
 
