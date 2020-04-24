@@ -1,4 +1,4 @@
-/* //////////////// */
+/* ///// Countries/////////// */
 .Brazil{
   background-image: url(https://www.nationalgeographic.com/content/dam/travel/Guide-Pages/south-america/rio-de-janeiro-travel.adapt.1900.1.jpg);
   height:100vh;
@@ -8,18 +8,43 @@
   height:100vh;
 }
 .UAE{
-  background-image: url(https://images.rove.me/w_1920,q_85/ozax9kwrrcf0hgjqxwxf/dubai-burj-khalifa.jpg);
+  background-image: url(https://i0.wp.com/www.middleeastmonitor.com/wp-content/uploads/2020/01/ENvxBqDXYAEgdDy.jpeg?quality=85&strip=all&ssl=1);
   height:100vh;
 }
 .UK{
-  background-image: url(https://www.history.com/.image/t_share/MTYyNDg1MjE3MTI1Mjc5Mzk4/topic-london-gettyimages-760251843-promo.jpg);
+  background-image: url(https://fsymbols.com/images/flags/en.png),url(https://www.history.com/.image/t_share/MTYyNDg1MjE3MTI1Mjc5Mzk4/topic-london-gettyimages-760251843-promo.jpg);
   height:100vh;
+  
 }
 .Japan{
   background-image: url(https://d36tnp772eyphs.cloudfront.net/blogs/1/2011/05/japan-1200x729.jpg);
   height:100vh;
 }
+/* //////////// */
 
+/* /////NAVBAR//////// */
+.navbar{
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(0, 103, 103);
+  /* background-image: url("https://fsymbols.com/images/flags/es.png"),url("https://fsymbols.com/images/flags/fr.png"); */
+  background-repeat: no-repeat;
+  padding-top:20px
+}
+#flag{
+  background-image: url(https://fsymbols.com/images/flags/es.png)
+}
+#logo{
+  /* font-weight: 200; */
+  font-size: 40px;
+  color: aliceblue;
+}
+.links{
+  font-weight: 200;
+  font-size: 40px;
+  color: aliceblue;
+}
+  
 
 
 
@@ -27,11 +52,19 @@
 
 /* ///////////////////////// */
 body{
-  background-color:rgb(150, 184, 98);
+  /* background-color:rgb(150, 184, 98); */
+  background-image: url(https://www.justinesmith.net/wordpress/wp-content/uploads/2017/05/money-map-of-china-print.jpg);
+  background-repeat: no-repeat;
 
 }
-
-
+#footer{
+  font-weight: 200;
+}
+p{
+  font-size: 40px;
+  font-weight: 200;
+  background-color: aliceblue;
+}
 
 
 .both-bars{
