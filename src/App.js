@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {Route,Switch, Link , BrowserRouter as Router} from 'react-router-dom';
 import axios from 'axios'
-import './App.css'
+import './Styles/App.css'
 import Selector from './components/Selector'
 import Rates from './components/Rates'
 import About from './components/About'
