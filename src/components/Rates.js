@@ -2,6 +2,7 @@ import React from 'react'
 
 export default function Rates() {
   
+    //lists the current exchange rate for the specific coin
     return (
         <div>
             <h1>
