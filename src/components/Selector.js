@@ -4,17 +4,30 @@ import Converter from './Converter'
 
 
 export class Selector extends Component {
-
+//assigned null to amount because did not want a 0 to render in the forms
 state={
     country:'',
     amount:null,
     conversion:0
 }
+
+/* Input:receives number and  and country value.
+Process: assigns it to this components state before calling 
+the convert function*/
    onSubmit = (event) => {
      event.preventDefault();
         this.setState({[event.target.name]: event.target.value })
         this.convert()  
     }
+
+    /*Input: country value and amount value in the state currently. 
+ 
+Process: After checking country value it divides the amount by that country's currency then
+assings the result to variable "a" which is then assigned to state conversion property
+narrowed down to 2 decimal points.
+
+Output: returns the new value assigned to conversion property in the state.*/
+
 
     convert(){
         if (this.state.country==="Brazil"){
@@ -44,8 +57,13 @@ state={
         }
    
     }
+
+    /*Input: Receives the information typed and selected from the forms.
+
+Process: Targets the name value of "country" and "amount" in the state.
+onSubmit function above finishes the process of assigment of form values into properties in the state */
  
-  onChange = (event) => (this.setState({[event.target.name]: event.target.value })); 
+onChange = (event) => (this.setState({[event.target.name]: event.target.value })); 
     
   render() {
         return (
@@ -76,7 +94,7 @@ state={
                             </div>
 
                         </div>
-                                       
+                                   
                         <Converter choice={this.state.conversion} 
                            amount={this.state.amount} 
                            country={this.state.country}
