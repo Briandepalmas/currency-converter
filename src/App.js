@@ -18,7 +18,8 @@ export class App extends Component {
 
 
 
-/* Input --Axios "Gets" the conversion rates of 1 U.S Dollar from different countries. API from https://www.exchangerate-api.com/
+/* Input --Axios "Gets" the conversion rates of 1 U.S Dollar from different countries. 
+          API from https://www.exchangerate-api.com/
 Process--setSate populates the empty state with rates fromthe API response */
 
  componentDidMount(){

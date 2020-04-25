@@ -13,7 +13,7 @@ state={
 
 /* Input:receives number and  and country value.
 Process: assigns it to this components state before calling 
-the convert function*/
+        the convert function*/
    onSubmit = (event) => {
      event.preventDefault();
         this.setState({[event.target.name]: event.target.value })
@@ -23,8 +23,8 @@ the convert function*/
     /*Input: country value and amount value in the state currently. 
  
 Process: After checking country value it divides the amount by that country's currency then
-assings the result to variable "a" which is then assigned to state conversion property
-narrowed down to 2 decimal points.
+        assings the result to variable "a" which is then assigned to state conversion property
+        narrowed down to 2 decimal points.
 
 Output: returns the new value assigned to conversion property in the state.*/
 
